@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class ="container">
+    <p class="js-result result"></p>
+<div class="flex">
+  <div class ="first Row">
+  <button class ="one number" onclick="updateCalculation(1)">1</button>
+  <button class ="two number"
+  onclick="updateCalculation(2)">2</button>
+  <button class ="three number"
+  onclick="updateCalculation(3)">3</button>
+  <button class ="plus operation" onclick="updateCalculation('+')">+</button>
+  </div>
+  
+  <div class ="Secound Row">
+  <button class ="four number"
+  onclick="updateCalculation(4)">4</button>
+  <button class ="five number"
+  onclick="updateCalculation(5)">5</button>
+  <button class ="six number"
+  onclick="updateCalculation(6)">6</button>
+  <button class ="sub operation"
+  onclick="updateCalculation('-')">-</button>
+  </div>
+
+  <div class ="Third Row">
+    <button class ="seven number" onclick="updateCalculation(7)">7</button>
+    <button class ="eight number"onclick="updateCalculation(8)">8</button>
+    <button class ="nine number"
+    onclick="updateCalculation(9)">9</button>
+    <button class ="multi operation"
+    onclick="updateCalculation('*')">*</button>
+    </div>
+
+    <div class ="for Row">
+      <button class ="zero number"onclick="updateCalculation(0)">0</button>
+      <button class ="dot"onclick="updateCalculation('.')">.</button>
+      <button class ="equal" onclick="calculateResult()">=</button>
+      <button class ="div operation" onclick="updateCalculation('/')">/</button>
+      </div>
+  
+      
+    <div class ="five Row">
+      <button class ="clear" onclick="Clear();">Clear</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </div>
+</body>
+</html>
