@@ -38,7 +38,7 @@ button{
   font-size: 25px;
   border-style: none;
   border-radius: 30px;
-  cursor:cell;
+  cursor: pointer;
 }
 .number ,.dot ,.equal ,.clear{
   background-color: rgb(49, 49, 49);
