@@ -49,18 +49,13 @@ function Add(){
   //saveToDoListIntoLocalStorage
   localStorage.setItem('ToDolistObject', JSON.stringify(ToDo));
 
-  console.log(`${ToDo}`);
   Display();
 }
 
 function Display() {
   let Html = '';
   
-  for (let i = 0; i < ToDolistObject.length; i++) {
-    const item = ToDolistObject[i];
-    
-    // Debugging output
-    console.log(`Item at index ${i}:`, item);
+  ToDolistObject.forEach(function(item , i){
     
     if (item && item.ToDo) {
       const toDoItem = item.ToDo;
@@ -72,7 +67,7 @@ function Display() {
       <button class=" delete-btn" onclick="remove(${i});" > Delete 
       </button> `;
     }
-  }
+  });
   document.querySelector('.result').innerHTML = Html;
 }
 
