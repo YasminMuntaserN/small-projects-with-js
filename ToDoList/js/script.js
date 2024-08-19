@@ -55,7 +55,7 @@ function Add(){
 function Display() {
   let Html = '';
   
-  ToDolistObject.forEach(function(item , i){
+  ToDolistObject.forEach( (item , i) => {
     
     if (item && item.ToDo) {
       const toDoItem = item.ToDo;
