@@ -111,9 +111,9 @@ function getInitializedScoreResult()
   score = storedScore ? JSON.parse(storedScore) : null;
 
   score = score ?? {
-    wins: 0,
-    loses: 0,
-    ties: 0
+    wins:0,
+    losses:0,
+    Ties:0
   };
 
   return score;
