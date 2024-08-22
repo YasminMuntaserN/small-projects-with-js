@@ -1,0 +1,88 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.content{
+padding-left: 70px;
+background-color: rgb(58, 58, 58);
+margin-top: -20px;
+padding: 60px;
+border-radius:10px;
+}
+
+
+
+.level-select {
+  margin-bottom: 20px;
+  }
+
+.level-select label {
+  margin-right: 10px;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.level-select select {
+  padding: 5px;
+  font-size: 16px;
+  background-color: rgb(243, 243, 239);
+  border-style: none;
+  border-radius:10px;
+}
+
+
+.matrix {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr);  */
+  gap: 10px; 
+  width: max-content; 
+  margin: 20px auto;
+}
+
+.choces {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  color: aliceblue;
+}
+.header{
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color:rgb(163, 167, 174);
+  padding-bottom: 5px;
+  text-align: center;
+  width:1040px;
+  border-radius:10px;
+}
+.guess-input{
+  height:25px;
+  width:230px;
+  border-radius:10px;
+}
+.submit-btn ,.reset-btn{
+  width:130px; 
+  height:30px;
+  font-size: 17px;
+  background-color: rgb(175, 175, 173);
+  border-style: none;
+  border-radius:10px;
+}
+.result{
+  font-size: 40px;
+  margin-top: 10px;
+  color: aliceblue;
+
+}
+
+
+img {
+  width: 30px;
+  height: 30px;
+}

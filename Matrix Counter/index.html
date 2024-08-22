@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+      <div class ="header">How many times does the number <span class="number" ></span> appear?</div>
+      <div class ="content">
+      <div class="level-select">
+            <label for="level">Select Difficulty:</label>
+            <select class="level">
+                <option value="9">Easy</option>
+                <option value="36">Medium</option>
+                <option value="81">Hard</option>
+            </select>
+        </div>
+        <div class="matrix"></div>
+        <input type="number" class="guess-input" placeholder="Enter your guess">
+        <button class="submit-btn">Submit Guess</button>
+        <button class="reset-btn">Reset </button>
+        <div class="result"></div>
+    </div>
+</div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
