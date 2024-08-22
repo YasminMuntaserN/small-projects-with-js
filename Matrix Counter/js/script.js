@@ -64,11 +64,7 @@ function getGuessInput() {
   const guessInput = getInputAnswerElement()?.value;
   const guess = parseInt(guessInput, 10);
 
-  // Check if the input is a valid number
-  if (isNaN(guess)) {
-    document.querySelector('.result').textContent = 'Please enter a valid number.';
-    return 0;
-  }
+
 
   return guess; // Return the parsed input
 }
@@ -76,7 +72,11 @@ function getGuessInput() {
 function showResult(count) {
   const guessInput = getGuessInput();
   const resultElement = getResultElement();
-
+  // Check if the input is a valid number
+  if (isNaN(guessInput)) {
+    document.querySelector('.result').textContent = 'Please enter a valid number.';
+    return;
+  }
   // Check the result
   if (guessInput === count) {
     resultElement.innerHTML = ` <img src ="../imgs/correct.png"> Correct`;
