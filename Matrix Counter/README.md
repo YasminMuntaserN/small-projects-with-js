@@ -1,4 +1,4 @@
-#🎯 Number Guessing Game
+<H1>🎯 Number Guessing Game</H1>
 
 ![Demo ](https://imgur.com/0BBbsI4.jpg)
 
